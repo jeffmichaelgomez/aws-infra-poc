@@ -1,5 +1,5 @@
 resource "aws_iam_role" "dev_bucket_access" {
-  name = "DevBucketAccess"
+  name               = "DevBucketAccess"
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
 }
 
