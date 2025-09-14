@@ -15,7 +15,7 @@ data "aws_iam_policy_document" "assume_role" {
 
 resource "aws_iam_policy" "dev_bucket_policy" {
   name   = "DevBucketAccessPolicy"
-  policy = file("file(${path.root}/../../policies/dev/dev_bucket_user_policy.json)")
+  policy = file("../../policies/dev/dev_bucket_user_policy.json")
 }
 
 resource "aws_iam_role_policy_attachment" "attach" {
