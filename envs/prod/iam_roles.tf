@@ -15,7 +15,7 @@ data "aws_iam_policy_document" "assume_role" {
 
 resource "aws_iam_policy" "prod_bucket_policy" {
   name   = "ProdBucketAccessPolicy"
-  policy = file("../../policies/prod/prod_bucket_user_policy.json)")
+  policy = file("../../policies/prod/prod_bucket_user_policy.json")
 }
 
 resource "aws_iam_role_policy_attachment" "attach" {
