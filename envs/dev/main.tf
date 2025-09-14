@@ -6,4 +6,4 @@ locals {
 resource "aws_s3_bucket" "app_data" {
   bucket = "${local.name_prefix}-data-001"
   tags   = local.tags_all
-}
+} 
